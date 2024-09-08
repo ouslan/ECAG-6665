@@ -1,0 +1,223 @@
+\documentclass[12pt]{beamer}
+
+% ****************
+% ***** INFO *****
+% ****************
+\usepackage[english]{babel}
+\title[]{Assignment 1}
+\subtitle{ECAG-6665: Applied Econometrics}
+\author[Name Surname]{Alejandro Ouslan}
+\institute[UPR.png]{University of Puerto Rico}
+\date{} % or \today
+
+% *******************
+% ***** PROJECT *****
+% *******************
+% main color: to black
+\definecolor{main}{HTML}{000000}
+\setbeamercolor{structure}{fg=main}
+
+% *****************
+% ***** THEME *****
+% *****************
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\setbeamertemplate{frametitle continuation}{\gdef\beamer@frametitle{}}
+\setbeamertemplate{footline}{}
+\setbeamertemplate{navigation symbols}{}
+\usepackage{csquotes}
+\usepackage[backend=biber,style=numeric]{biblatex}
+\addbibresource{sample.bib} % Link to the bibliography file
+
+% *****************
+% ***** CODE *****
+% *****************
+\usepackage{listings}
+\lstdefinestyle{java}{
+	backgroundcolor=\color{white},
+	basicstyle=\ttfamily\scriptsize,
+	breaklines=true,
+	commentstyle=\color{gray},
+	keywordstyle=\color{blue},
+	stringstyle=\color{magenta},
+	identifierstyle=\color{black},
+	numberstyle=\color{gray},
+	language=Java
+}
+\lstdefinestyle{cpp}{
+	backgroundcolor=\color{white},
+	basicstyle=\ttfamily\scriptsize,
+	breaklines=true,
+	commentstyle=\color{gray},
+	keywordstyle=\color{blue},
+	stringstyle=\color{magenta},
+	identifierstyle=\color{black},
+	numberstyle=\color{gray},
+	language=C++
+}
+\lstdefinestyle{py}{
+	backgroundcolor=\color{white},
+	basicstyle=\ttfamily\scriptsize,
+	breaklines=true,
+	commentstyle=\color{gray},
+	keywordstyle=\color{blue},
+	stringstyle=\color{magenta},
+	language=Python
+}
+\lstdefinestyle{js}{
+	backgroundcolor=\color{white},
+	basicstyle=\ttfamily\scriptsize,
+	breaklines=true,
+	commentstyle=\color{gray},
+	keywordstyle=\color{blue},
+	stringstyle=\color{magenta},
+	identifierstyle=\color{black},
+	numberstyle=\color{gray},
+	language=JavaScript,
+	escapechar=@
+}
+\lstdefinestyle{sh}{
+	basicstyle=\ttfamily\scriptsize,
+	breaklines=true,
+	commentstyle=\color{gray},
+	keywordstyle=\color{blue},
+	stringstyle=\color{magenta},
+	identifierstyle=\color{black},
+	numberstyle=\color{gray},
+	language=bash
+}
+
+% **********************
+% ***** ALGORITHMS *****
+% **********************
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+% *****************
+% ***** UTILS *****
+% *****************
+\usepackage{xcolor}
+
+% ********************
+% ***** DOCUMENT *****
+% ********************
+\begin{document}
+
+% **********************
+% ***** TITLEPAGE ******
+% **********************
+\begin{frame}{}
+	\vspace{\fill}
+
+	\includegraphics[width=0.16\linewidth]{uprm_logo.png}
+
+	\vspace{\fill}
+
+	\Large
+	\color{main}
+	\inserttitle
+
+	\medskip
+
+	\large
+	\color{black}
+	\insertsubtitle
+
+	\vspace{\fill}
+
+	\footnotesize
+	\insertinstitute
+
+	\vspace{\fill}
+
+	\textbf{Author:} \insertauthor
+
+	\medskip
+
+	\insertdate
+
+	\vspace{\fill}
+\end{frame}
+
+% *****************
+% ***** START *****
+% *****************
+\begin{frame}[allowframebreaks]{Typography}
+	\begin{itemize}
+		\item \textbf{Bold}
+		\item \textit{Italic}
+		\item \texttt{Monospaced}
+		\item \underline{Underlined}
+		\item \href{https://example.com/}{\underline{\color{main}{Link}}}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Lists}
+	Itemize:
+
+	\begin{itemize}
+		\item \textbf{Item 1:} Example of an item in an itemize list.
+		\item \textbf{Item 2:} Another item demonstrating the use of itemize.
+		\item \textbf{Item 3:} Yet another example to show list formatting.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Research Question}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Justification of Research}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Literature Review}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Characteristics of the Data and Data Sources}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Methodology}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Method Justification}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Results Figures}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Descriptive Statistics}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Results}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Graphs}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Conclusions}
+
+\end{frame}
+% ************************
+% ***** BIBLIOGRAPHY *****
+% ************************
+\begin{frame}[allowframebreaks]{Bibliography}
+	Here is a reference to a source. For example, \textit{Momentum Contrast for Unsupervised Visual Representation Learning by He et al. (2020)} \cite{he2020momentum} is a placeholder text for a bibliography entry.
+
+	\framebreak
+
+	\scriptsize
+	\printbibliography
+\end{frame}
+% ***************
+% ***** END *****
+% ***************
+
+\end{document}
