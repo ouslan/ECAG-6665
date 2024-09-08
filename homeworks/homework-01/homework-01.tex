@@ -101,7 +101,7 @@
 % *****************
 \begin{frame}[allowframebreaks]{Research Question}
 	\begin{itemize}
-		\item The research question for this study is whether the minimum wage increase affects the prices of McDonald's products.
+		\item The research question for this study is whether the minimum wage increase affects the prices of McDonald's products. \cite{ashenfelter2022minimum}
 	\end{itemize}
 
 \end{frame}
@@ -116,20 +116,44 @@
 
 \begin{frame}[allowframebreaks]{Literature Review}
 	\begin{itemize}
-		\item Minimum wage hikes are often associated with a positive spillover (or "ripple effect") on wagbes above the new minimum \cite{cengiz2019effect}.
+		\item Minimum wage hikes are often associated with a positive spillover (or "ripple effect") on wages above the new minimum \cite{cengiz2019effect}.
+		\item Wage spillovers may reflect the value of outside options or within-firm pay norms \cite{flinn2006minimum}
+		\item Potential for technological substitution of low-skill labor is limited to cognitively routine tasks, i.e., it may not apply to manually routine jobs. \cite{phelan2019hedonic}
+		\item Under monopsonistic competition in local markets, fims face an upward sloping labor supply curve. \cite{manning2013monopsony}
 	\end{itemize}
 
 \end{frame}
 
 \begin{frame}[allowframebreaks]{Data Characteristics and Data Sources}
-
+	\begin{itemize}
+		\item The data comes form the annual geo-coded listing of all McDonald's restaurants.
+		\item The database was obtained from AggData, a market research company
+		\item 2016-2020 annual telephone surveys of McDonald's restaurants done by the author of the study.
+		\item of these, 720 observations come from stores that are observed only once.
+		\item The reliability ration corresponding to annual wage changes is about 0.9.
+		\item The survey data was supplemented with data from owner identities by FranData.
+	\end{itemize}
 \end{frame}
 
 \begin{frame}[allowframebreaks]{Methodology}
-
-\end{frame}
-
-\begin{frame}[allowframebreaks]{Method Justification}
+	\begin{itemize}
+		\item Estimating the McWage elasticity with respect o minimum wages from 2016 to 2020.
+		      \begin{equation}
+			      \ln{McWage_{it}} = \alpha + \beta \ln{MW_{it}} + \delta_{i} + \phi_{t} + \epsilon_{it}
+		      \end{equation}
+		\item Estimating a two-stage least square regression of prices on wages where wages are instrumented using minimum wages.
+		      \begin{equation}
+			      \ln{BigMacPrice_{it}} = \alpha + \beta \ln{McWage_{it}} + \delta_{i} + \phi_{t} + \epsilon_{it}
+		      \end{equation}
+		\item The reduced form relationship between prices and minimum wages is given by:
+		      \begin{equation}
+			      \ln{BigMacPrice_{it}} = \alpha + \beta \ln{MW_{it}} + \delta_{i} + \phi_{t} + \epsilon_{it}
+		      \end{equation}
+		\item Estimate a specification relating the probability of restaurant ecit to minimum wages at the county level.
+		      \begin{equation}
+			      \ln{Exit_{it}} = \alpha + \beta \ln{MW_{it}} + \delta_{i} + \phi_{t} + \epsilon_{it}
+		      \end{equation}
+	\end{itemize}
 
 \end{frame}
 
@@ -150,7 +174,6 @@
 \end{frame}
 
 \begin{frame}[allowframebreaks]{Conclusions}
-	\cite{ashenfelter2022minimum}
 
 \end{frame}
 % ************************
