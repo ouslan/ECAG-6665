@@ -4,10 +4,11 @@
 % ***** INFO *****
 % ****************
 \usepackage[english]{babel}
-\title[]{Assignment 1}
-\subtitle{ECAG-6665: Applied Econometrics}
+\title[]{Wages, Minimum Wages, and Price Pass-Through:
+	The Case of McDonald’s Restaurants}
+\subtitle{ECAG-6665: Research Report}
 \author[Name Surname]{Alejandro Ouslan}
-\institute[UPR.png]{University of Puerto Rico}
+\institute[institute]{University of Puerto Rico}
 \date{} % or \today
 
 % *******************
@@ -27,34 +28,12 @@
 \setbeamertemplate{navigation symbols}{}
 \usepackage{csquotes}
 \usepackage[backend=biber,style=numeric]{biblatex}
-\addbibresource{sample.bib} % Link to the bibliography file
+\addbibresource{../../reference.bib} % Link to the bibliography file
 
 % *****************
 % ***** CODE *****
 % *****************
 \usepackage{listings}
-\lstdefinestyle{java}{
-	backgroundcolor=\color{white},
-	basicstyle=\ttfamily\scriptsize,
-	breaklines=true,
-	commentstyle=\color{gray},
-	keywordstyle=\color{blue},
-	stringstyle=\color{magenta},
-	identifierstyle=\color{black},
-	numberstyle=\color{gray},
-	language=Java
-}
-\lstdefinestyle{cpp}{
-	backgroundcolor=\color{white},
-	basicstyle=\ttfamily\scriptsize,
-	breaklines=true,
-	commentstyle=\color{gray},
-	keywordstyle=\color{blue},
-	stringstyle=\color{magenta},
-	identifierstyle=\color{black},
-	numberstyle=\color{gray},
-	language=C++
-}
 \lstdefinestyle{py}{
 	backgroundcolor=\color{white},
 	basicstyle=\ttfamily\scriptsize,
@@ -63,28 +42,6 @@
 	keywordstyle=\color{blue},
 	stringstyle=\color{magenta},
 	language=Python
-}
-\lstdefinestyle{js}{
-	backgroundcolor=\color{white},
-	basicstyle=\ttfamily\scriptsize,
-	breaklines=true,
-	commentstyle=\color{gray},
-	keywordstyle=\color{blue},
-	stringstyle=\color{magenta},
-	identifierstyle=\color{black},
-	numberstyle=\color{gray},
-	language=JavaScript,
-	escapechar=@
-}
-\lstdefinestyle{sh}{
-	basicstyle=\ttfamily\scriptsize,
-	breaklines=true,
-	commentstyle=\color{gray},
-	keywordstyle=\color{blue},
-	stringstyle=\color{magenta},
-	identifierstyle=\color{black},
-	numberstyle=\color{gray},
-	language=bash
 }
 
 % **********************
@@ -109,7 +66,7 @@
 \begin{frame}{}
 	\vspace{\fill}
 
-	\includegraphics[width=0.16\linewidth]{uprm_logo.png}
+	\includegraphics[width=0.16\linewidth]{../../assets/uprm_logo.png}
 
 	\vspace{\fill}
 
@@ -142,39 +99,29 @@
 % *****************
 % ***** START *****
 % *****************
-\begin{frame}[allowframebreaks]{Typography}
-	\begin{itemize}
-		\item \textbf{Bold}
-		\item \textit{Italic}
-		\item \texttt{Monospaced}
-		\item \underline{Underlined}
-		\item \href{https://example.com/}{\underline{\color{main}{Link}}}
-	\end{itemize}
-\end{frame}
-
-\begin{frame}[allowframebreaks]{Lists}
-	Itemize:
-
-	\begin{itemize}
-		\item \textbf{Item 1:} Example of an item in an itemize list.
-		\item \textbf{Item 2:} Another item demonstrating the use of itemize.
-		\item \textbf{Item 3:} Yet another example to show list formatting.
-	\end{itemize}
-\end{frame}
-
 \begin{frame}[allowframebreaks]{Research Question}
+	\begin{itemize}
+		\item The research question for this study is whether the minimum wage increase affects the prices of McDonald's products.
+	\end{itemize}
 
 \end{frame}
 
 \begin{frame}[allowframebreaks]{Justification of Research}
+	\begin{itemize}
+		\item This study provides insight into whether increases of the minimum wage affect the prices of products and determine its elasticity.
+		\item The study also provides whether the introduction of labor saving technology like touch screens ordering kiosks affects the price of products.
+	\end{itemize}
 
 \end{frame}
 
 \begin{frame}[allowframebreaks]{Literature Review}
+	\begin{itemize}
+		\item Minimum wage hikes are often associated with a positive spillover (or "ripple effect") on wagbes above the new minimum \cite{cengiz2019effect}.
+	\end{itemize}
 
 \end{frame}
 
-\begin{frame}[allowframebreaks]{Characteristics of the Data and Data Sources}
+\begin{frame}[allowframebreaks]{Data Characteristics and Data Sources}
 
 \end{frame}
 
@@ -203,17 +150,13 @@
 \end{frame}
 
 \begin{frame}[allowframebreaks]{Conclusions}
+	\cite{ashenfelter2022minimum}
 
 \end{frame}
 % ************************
 % ***** BIBLIOGRAPHY *****
 % ************************
 \begin{frame}[allowframebreaks]{Bibliography}
-	Here is a reference to a source. For example, \textit{Momentum Contrast for Unsupervised Visual Representation Learning by He et al. (2020)} \cite{he2020momentum} is a placeholder text for a bibliography entry.
-
-	\framebreak
-
-	\scriptsize
 	\printbibliography
 \end{frame}
 % ***************
