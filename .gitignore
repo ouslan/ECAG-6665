@@ -163,6 +163,14 @@ cython_debug/
 
 # Latex ignore
 *.aux
+*.bbl
+*.blg
+*.xml
+*.nav
+*.snm
+*.bbl-SAVE-ERROR
+*.bcf-SAVE-ERROR
+*.bcf
 *.fdb_latexmk
 *.fls
 *.out
