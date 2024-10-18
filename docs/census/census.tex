@@ -1,0 +1,63 @@
+\documentclass[10pt, oneside]{article}
+\usepackage{amsmath, amsthm, amssymb, calrsfs, wasysym, verbatim, bbm, color, graphics, geometry}
+\usepackage{authblk}
+
+\geometry{tmargin=.75in, bmargin=.75in, lmargin=.75in, rmargin = .75in}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Cdot}{\boldsymbol{\cdot}}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{conv}{Convention}
+\newtheorem{rem}{Remark}
+\newtheorem{lem}{Lemma}
+\newtheorem{cor}{Corollary}
+
+
+\title{La asociación entre los desiertos de comida y distintas causas de muerte en Puerto Rico}
+\author{Alejandro Ouslan y Julio C. Hernandez}
+\affil{USDA y LEADING Hispanics}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\vspace{.25in}
+
+\section{Introducción y Objetivos}
+
+En Puerto Rico, no se ha investigado el impacto de los desiertos de alimentos en la salud de la población. Estos desiertos se definen como áreas donde
+hay una notable escasez de acceso a alimentos frescos, saludables y asequibles. Se caracterizan por la falta de supermercados, colmados o mercados de
+agricultores que ofrezcan una variedad adecuada de alimentos nutritivos.
+
+\section{Metodologia}
+
+Los datos sobre las distintas causas de muerte relacionadas con condiciones de salud provienen del Departamento de Salud, mientras que la información sobre los
+establecimientos se obtiene del QCEW. La base de datos utilizada es un panel que incluye 2,779 observaciones correspondientes al período de 2015Q1 a 2020Q2, desglosadas por códigos ZIP de Puerto Rico.
+Además, se incorporaron otros datos comunitarios del American Community Survey. metodología empleada para esta investigación es el estimador Arellano–Bover/Blundell–Bond, que utiliza datos de panel para medir la
+correlación de rezagos en la variable independiente.
+\[
+	\begin{split}
+		y_{it} &= \sum_{j=1}^{p} \alpha_j y_{i,t-j} + X_{it} \beta_1 + W_{it} \beta_2 + v_i + \varepsilon \\
+		\text{ donde } i &= 1, \ldots, N \text{ y } t = 1, \ldots, T_i
+	\end{split}
+\]
+\section{Resultados}
+El estudio reveló una relación negativa entre la cantidad de establecimientos de comida y las enfermedades cancerígenas, circulatorias y respiratorias.
+Por otro lado, se encontró una relación positiva entre la inseguridad alimentaria y estas mismas enfermedades. También se observó una correlación entre
+los hogares que participan en el programa de Asistencia Nutricional (PAN) y las enfermedades cancerígenas y respiratorias. Además, se identificó que
+los hogares de bajos ingresos están correlacionados con un aumento en la incidencia de enfermedades cancerígenas y respiratorias.
+
+\section{Conclusiones}
+
+El estudio encontró una relación negativa entre la cantidad de establecimientos de comida y la incidencia de enfermedades como el cáncer, las enfermedades
+circulatorias y respiratorias. Por lo tanto, es fundamental crear incentivos para fomentar la apertura de supermercados, colmados o mercados de agricultores
+en las áreas que se consideran desiertos de alimentos. Además, la implementación del programa SNAP podría contribuir a reducir la inseguridad alimentaria en Puerto Rico.
+
+\end{document}
